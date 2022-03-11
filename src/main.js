@@ -35,7 +35,7 @@ const render = () => {
             </div>
         </li>
   `).insertBefore($lastLi)
-    $li.on('click', () => open(node.url))
+    $li.on('click', () => open(node.url, '_self'))
     $li.on('click', '.close', (e) => {
       e.stopPropagation()
       hashMap.splice(index, 1)
