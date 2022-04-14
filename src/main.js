@@ -4,12 +4,24 @@ const x = localStorage.getItem('x')
 const xObject = JSON.parse(x)
 const hashMap = xObject || [
   {
-    logo: 'A',
-    url: 'https://www.acfun.cn/',
+    logo: 'G',
+    url: 'https://github.com/',
+  },
+  {
+    logo: 'C',
+    url: 'https://codepen.io/trending',
   },
   {
     logo: 'B',
-    url: 'https://www.bilibili.com/',
+    url: 'https://www.bootcdn.cn/',
+  },
+  {
+    logo: 'S',
+    url: 'https://stackoverflow.com/',
+  },
+  {
+    logo: 'J',
+    url: 'https://juejin.cn/',
   },
 ]
 const simplifyUrl = (url) => {
