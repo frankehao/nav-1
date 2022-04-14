@@ -30,6 +30,11 @@ body {
   width: 160px;
   height: 160px;
 }
+@media (max-width: 450px) {
+  .logo1 {
+    margin: 20px auto 30px;
+  }
+}
 .globalHeader {
   margin: 20px 20px;
 }
@@ -37,7 +42,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
-@media (min-width: 400px) {
+@media (min-width: 450px) {
   .searchForm {
     max-width: 400px;
     margin: 50px auto;
@@ -67,7 +72,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-@media (min-width: 400px) {
+@media (min-width: 450px) {
   .globalMain {
     min-width: 900px;
     max-width: 900px;
@@ -79,7 +84,7 @@ body {
   justify-content: space-between;
   margin: 20px;
 }
-@media (min-width: 400px) {
+@media (min-width: 450px) {
   .siteList {
     justify-content: start;
     margin-right: -57px;
@@ -88,7 +93,7 @@ body {
 .siteList > li {
   margin-bottom: 20px;
 }
-@media (min-width: 400px) {
+@media (min-width: 450px) {
   .siteList > li {
     margin-right: 25px;
   }
