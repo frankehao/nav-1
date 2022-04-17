@@ -20,10 +20,16 @@ ul,
 ol {
   list-style: none;
 }
-body {
+html {
+  height: 100vh;
   background-color: #eee;
-  background: url(../images/unnamed7.jpg) center center;
+  background: url(../images/unnamed.jpg) center center no-repeat;
   background-size: cover;
+}
+@media (max-width: 450px) {
+  body {
+    background: #b8c6c7;
+  }
 }
 .logo1 {
   margin: 100px auto 20px;
@@ -78,37 +84,66 @@ body {
     max-width: 900px;
   }
 }
-.siteList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 20px;
+@media (max-width: 450px) {
+  .siteList {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    margin: 0 20px;
+  }
 }
+
 @media (min-width: 450px) {
   .siteList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     justify-content: start;
     margin-right: -57px;
   }
 }
-.siteList > li {
-  margin-bottom: 20px;
-}
-@media (min-width: 450px) {
+
+@media (max-width: 450px) {
   .siteList > li {
-    margin-right: 25px;
+    margin-bottom: 20px;
+    flex: 0 0 47%;
+    width: 0;
+    overflow: hidden;
   }
 }
-.siteList .site {
-  position: relative;
-  display: flex;
-  width: 160px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  padding: 15px 0;
-  cursor: pointer;
-  border-radius: 4px;
+
+@media (min-width: 450px) {
+  .siteList > li {
+    margin-bottom: 20px;
+    margin-right: 25px;
+    overflow: hidden;
+  }
+  .siteList .site {
+    position: relative;
+    display: flex;
+    width: 160px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+}
+@media (max-width: 450px) {
+  .siteList .site {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+    border-radius: 4px;
+  }
 }
 .siteList .site > .logo {
   display: flex;

@@ -169,7 +169,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\unnamed7.jpg":[["unnamed7.ec946387.jpg","..\\images\\unnamed7.jpg"],"..\\images\\unnamed7.jpg"],"_css_loader":"C:\\Users\\二狗哥\\AppData\\Local\\Yarn\\Data\\global\\node_modules\\parcel\\src\\builtins\\css-loader.js"}],"C:\\Users\\二狗哥\\AppData\\Local\\Yarn\\Data\\global\\node_modules\\parcel\\src\\builtins\\hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\images\\unnamed.jpg":[["unnamed.88c00197.jpg","..\\images\\unnamed.jpg"],"..\\images\\unnamed.jpg"],"_css_loader":"C:\\Users\\二狗哥\\AppData\\Local\\Yarn\\Data\\global\\node_modules\\parcel\\src\\builtins\\css-loader.js"}],"C:\\Users\\二狗哥\\AppData\\Local\\Yarn\\Data\\global\\node_modules\\parcel\\src\\builtins\\hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -198,7 +198,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '63629' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '61449' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
