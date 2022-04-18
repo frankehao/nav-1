@@ -20,12 +20,15 @@ ul,
 ol {
   list-style: none;
 }
-html {
-  height: 100vh;
-  background-color: #eee;
-  background: url(../images/unnamed.jpg) center center no-repeat;
-  background-size: cover;
+@media (min-width: 450px) {
+  html {
+    height: 100vh;
+    background-color: #eee;
+    background: url(../images/unnamed.jpg) center center no-repeat;
+    background-size: cover;
+  }
 }
+
 @media (max-width: 450px) {
   body {
     background: #b8c6c7;
